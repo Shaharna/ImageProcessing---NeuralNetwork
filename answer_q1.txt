@@ -1,0 +1,13 @@
+q1:
+
+As we can see in the plots attached, in the deblurring mission as the number
+of the residual blocks increase the error decreases.
+We can understand that as the network gets deeper it has more weights to learn
+and therefore preforms better.
+On the other hand, we can see that in the denoising mission the minimum point
+of the error is when the number of residual blocks is 4, and the maximum error
+at the plot is when the number of residual blocks is 3. I can only assume it
+had happened due to overfitting.
+
+
+

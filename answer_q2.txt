@@ -1,0 +1,17 @@
+q2:
+
+The main idea will be to "hurt" the images resolution by multiplying it by k
+and at the end to divide it back with k.
+
+Full Answer:
+1. corruption function - The corruption function will receive an image (patch)
+ - taken from the high resolution function,first,it will reduce its size by k,
+  and then it will increase its size by k (default value for k will be 2).
+  A good solution for the resizing with 2 will be using gaussian pyramid.
+ This corruption function will hurt the image resolution.
+
+2. restore_image - We recall that restore image uses the base model to restore
+full images of any size. Therefore, we will increase by k the image size,
+use the function build nn model and build a correct model for it, and then we
+will give it to our network.
+
